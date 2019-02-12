@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Reboot from 'material-ui/Reboot';
+// import CssBaseline from 'material-ui/CssBaseline';
 
 import reducers from './reducers';
 
@@ -13,7 +13,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <div>
-    <Reboot />
+    {/* <CssBaseline /> */}
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>

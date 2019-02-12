@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  dev:
+    image: node:11
+    volumes:
+      - .:/usr/src/service      
+      - node_modules:/usr/src/service/node_modules
+    environment:
+      - NODE_ENV=development
+    working_dir: /usr/src/service
+    command: npm run dev
+    ports:
+      - 8080:8080
+
+volumes:
+  node_modules:
