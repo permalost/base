@@ -14,6 +14,18 @@ services:
       service: base
     command: npm i
 
+  storybook-install:
+    extends:
+      service: base
+    command: npx -p @storybook/cli sb init
+
+  story:
+    extends:
+      service: base
+    command: yarn run storybook
+    ports:
+      - 9009:9009
+
   build:
     extends:
       service: base
