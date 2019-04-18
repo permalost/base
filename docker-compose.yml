@@ -9,7 +9,7 @@ services:
     environment:
       - NODE_ENV=development
     working_dir: /usr/src/service
-    command: npm run dev
+    entrypoint: ["npx", "run", "dev"]
     ports:
       - 8080:8080
 
