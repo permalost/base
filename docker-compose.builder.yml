@@ -18,6 +18,15 @@ services:
     extends:
       service: base
     entrypoint: ["npm"]
+    ports:
+      - 3000:3000
+
+  yarn:
+    extends:
+      service: base
+    entrypoint: ["yarn"]
+    ports:
+      - 3000:3000
 
   storybook-install:
     extends:
