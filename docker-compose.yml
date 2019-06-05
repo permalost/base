@@ -9,9 +9,9 @@ services:
     environment:
       - NODE_ENV=development
     working_dir: /usr/src/service
-    entrypoint: ["npx", "run", "dev"]
+    entrypoint: ["npm", "start"]
     ports:
-      - 8080:8080
+      - 3000:3000
 
 volumes:
   node_modules:
