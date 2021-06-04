@@ -3,7 +3,7 @@ version: '2'
 services:
 
   setup:
-    image: node:11
+    image: node:14
     volumes:
       - ..:/usr/src/service/
     working_dir: /usr/src/service/

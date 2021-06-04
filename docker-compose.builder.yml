@@ -3,7 +3,7 @@ version: '2'
 services:
 
   base:
-    image: node:11
+    image: node:14
     volumes:
       - .:/usr/src/service/
       - node_modules:/usr/src/service/node_modules
